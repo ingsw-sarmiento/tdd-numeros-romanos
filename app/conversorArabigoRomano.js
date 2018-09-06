@@ -2,6 +2,15 @@ module.exports =
 
 class ConversorArabigoRomano {
   valorPara(numeroArabigo) {
-    return numeroArabigo === 1 ? "I" : "II"
+    switch(numeroArabigo) {
+        case 1:
+            return "I";
+        case 2:
+            return "II";
+        case 3:
+            return "III";
+        default:
+            throw "No funciona para ese número";
+    }
   }
 }
