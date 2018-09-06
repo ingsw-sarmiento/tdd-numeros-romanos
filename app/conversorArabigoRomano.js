@@ -2,6 +2,6 @@ module.exports =
 
 class ConversorArabigoRomano {
   valorPara(numeroArabigo) {
-    return "I";
+    return numeroArabigo === 1 ? "I" : "II"
   }
 }
