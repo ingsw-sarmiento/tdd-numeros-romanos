@@ -1,3 +1,7 @@
-module.exports = class ConversorArabigoRomano {
-  
+module.exports =
+
+class ConversorArabigoRomano {
+  valorPara(numeroArabigo) {
+    return "I";
+  }
 }

@@ -3,12 +3,12 @@ const ConversorArabigoRomano = require('../app/conversorArabigoRomano');
 
 let conversor;
 
-describe("ConversorArabigoRomano", () => {
+describe("El conversor de árabe a romano", () => {
   beforeEach(() => {
     conversor = new ConversorArabigoRomano();
   });
 
-  it("test1", () => {
-    expect(2).to.eq(1);
+  it("puede convertir el número 1", () => {
+    expect(conversor.valorPara(1)).to.eq("I");
   });
 });
