@@ -10,12 +10,14 @@ class ConversorArabigoRomano {
       resultado = "V";
     } else if (numeroArabigo === 6) {
       resultado = "VI";
+    } else if (numeroArabigo === 7) {
+      resultado = "VII";      
     } else {
       for (var i = 0; i < numeroArabigo; i++) {
         resultado += "I"
       }
     }
-    
+
     return resultado;
   }
 }
