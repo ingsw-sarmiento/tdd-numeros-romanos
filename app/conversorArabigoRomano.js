@@ -7,6 +7,9 @@ class ConversorArabigoRomano {
     if (numeroArabigo === 4) {
       resultado = "IV";
       numeroArabigo -= 4;
+    } else if (numeroArabigo === 9) {
+      resultado = "IX";
+      numeroArabigo -= 9;
     } else if (numeroArabigo >= 5) {
       resultado = "V";
       numeroArabigo -= 5;

@@ -23,4 +23,8 @@ describe("El conversor de árabe a romano", () => {
   it("puede convertir números con V e I", () => {
     expect(conversor.valorPara(7)).to.eq("VII");
   });
+
+  it("puede convertir el 9", () => {
+    expect(conversor.valorPara(9)).to.eq("IX");
+  });
 });
