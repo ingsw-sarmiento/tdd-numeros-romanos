@@ -20,7 +20,7 @@ describe("El conversor de árabe a romano", () => {
     expect(conversor.valorPara(5)).to.eq("V");
   });
 
-  it("puede convertir números con V e I", () => {
+  it("puede convertir números con una V y varias I", () => {
     expect(conversor.valorPara(7)).to.eq("VII");
   });
 
@@ -32,11 +32,15 @@ describe("El conversor de árabe a romano", () => {
     expect(conversor.valorPara(10)).to.eq("X");
   });
 
-  it("puede convertir números con X e I", () => {
+  it("puede convertir números con una X y varias I", () => {
     expect(conversor.valorPara(13)).to.eq("XIII");
   });
 
   it("puede convertir el 14", () => {
     expect(conversor.valorPara(14)).to.eq("XIV");
+  });
+
+  it("puede convertir números con una X, una V y varias I", () => {
+    expect(conversor.valorPara(18)).to.eq("XVIII");
   });
 });
