@@ -11,7 +11,9 @@ class ConversorArabigoRomano {
     } else if (numeroArabigo === 6) {
       resultado = "VI";
     } else if (numeroArabigo === 7) {
-      resultado = "VII";      
+      resultado = "VII";
+    } else if (numeroArabigo === 8) {
+      resultado = "VIII";      
     } else {
       for (var i = 0; i < numeroArabigo; i++) {
         resultado += "I"
