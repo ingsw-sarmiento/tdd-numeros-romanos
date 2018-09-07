@@ -8,15 +8,7 @@ describe("El conversor de árabe a romano", () => {
     conversor = new ConversorArabigoRomano();
   });
 
-  it("puede convertir el número 1", () => {
-    expect(conversor.valorPara(1)).to.eq("I");
-  });
-
-  it("puede convertir el número 2", () => {
-    expect(conversor.valorPara(2)).to.eq("II");
-  });
-
-  it("puede convertir el número 3", () => {
+  it("puede convertir números que solo usan I", () => {
     expect(conversor.valorPara(3)).to.eq("III");
   });
 
@@ -28,15 +20,7 @@ describe("El conversor de árabe a romano", () => {
     expect(conversor.valorPara(5)).to.eq("V");
   });
 
-  it("puede convertir el número 6", () => {
-    expect(conversor.valorPara(6)).to.eq("VI");
-  });
-
-  it("puede convertir el número 7", () => {
+  it("puede convertir números con V e I", () => {
     expect(conversor.valorPara(7)).to.eq("VII");
-  });
-
-  it("puede convertir el número 8", () => {
-    expect(conversor.valorPara(8)).to.eq("VIII");
   });
 });
